@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header> 
+        <div class="navbar">
+          <div class="first-logo "> <a href="homepage.html"></a>  <img src="logo-naaz.png" class="name">
+          
+        </div>
+        <div class="abtus but"> <a href="#about-us ">About Us</a> </div>
+            <div class="sec-des but"><a href="#design">Our Designs</a><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+        <!--icon of ceo--> <div class="nav-ceo but"> <a href="#ceo">Our Cofounder</a></div>
+          <!--need to change-->   <div class="cont "> <a href=""><i class="fa-solid fa-phone fa-shake" style="color: #0d0f12;"></i>1457461110</a></div>
+         
+        <div class="contact but"><a href="mailto:starshiner11roblox@gmail.com">Mail us<i class="fa-solid fa-envelope fa-flip" style="color: #111118;"></i></a></div>
+      </div>
+
+    </header>
+    <fieldset class="imf">
+        <div class="images">
+          <!--change--><i class="fa-solid fa-chevron-left left-arrow" onclick="preimage()"></i>
+
+            <div class="img2"><img src="mehndi-photo-1.jpg" alt="mehndi" class="im-2" > </div>
+         
+            <i class="fa-solid fa-chevron-right right-arrow" onclick=" image()"></i>
+         
+            </div><!---->
+      </fieldset>
+        <fieldset id="about-us">
+          <p >  "The stain of Mehendi is the colour of love written on the canvas of your skin"</p>
+           <p class="cont"> nAAz Creations® is a company that curates the best Mehendi designs for all kinds of occasions. 
+            We are known for our craftmanship and versatility in Mehendi designs. 
+            From small parties to huge marriages, we will make sure everyone takes a look at your hands in awe and wonder. We appoint some of the most passionate artists with plenty of experience to make sure your hands are stained with a stunning design that you will never forget!</p>
+    
+        </fieldset>
+        <fieldset id="design" class="container-fluid mt-5 p-2">
+          <legend > <h3 >Our Designs</h3></legend>
+          <div class="image-designs row">
+           <div class="design1 col lg-4 sm-12 md-6 m-2" > <img src="degn-1.jpg" alt="nope" class="img-1"></div>
+           <div class="design2 col  lg-4 sm-12 md-6 m-2"><img src="degn-2.jpg" alt="nope" class="img-2"></div>
+           <div class="design3 col lg-4 sm-12 md-6 m-2"><img src="degn-3.jpg" alt="nope" class="img-3"></div>
+           <div class="design4 col lg-4 sm-12 md-6 m-2"><img src="degn-4.jpg" alt="nope" class="img-4"></div>
+           <div class="design5 col lg-4 sm-12 md-6 m-2"><img src="degn-5.jpg" alt="nope" class="img-5"></div>
+         <div class="design6 col lg-4 sm-12 md-6 m-2"><img src="degn-6.jpg" alt="nope" class="img-6"></div>
+         <a href="form.htm" target="blank"><button clas="but-booking">Book Now....</button></a>
+       </div></div>
+   </fieldset>
+    <fieldset class="content1" id="ceo">
+    
+    <legend style:text-align="text-align"><h3 class="ceo-name">
+    Our Cofounder
+    </h3></legend>
+    <div class="ceo-image" ><img src="" alt=" <3" class="im-act">I have to ask her to keep her photo</div>
+    <p class="ceo-info">{name of cofounder} is a professional Mehendi designer with a great passion in bringing joy to people's faces by tinting their hands with intricate and gorgeous Mehendi designs. Though she is a full-time college student, she wholeheartedly pursues her passion for Mehendi designs on the side. Her experience in Mehendi designs makes her the go-to person for good Mehendi. She runs this company with great passion and makes sure the customers get beautiful designs that they will remember for a lifetime. She carefully picks out the best ingredients suitable for a wide variety of skins and prioritizes
+       customer satisfaction. Her goal is to build a Mehendi empire which makes every clients occasions more memorable and special.
+    
+    </p>
+    
+    </fieldset>
+    
+    <div class="footer">
+        
+          <div  class="heart"> By nAAz Creations<sup><i class="fa-regular fa-registered trademark"></i></sup>  with  <i class="fa-solid fa-heart fa-beat" style="color: #af1d12;"></i></div>
+           <div class="copy">
+          &#169 are reserved</div><br>
+    <div class="follow">Follow us on:  
+        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram my-logo3"></i></a>
+      <a href="https://www.twitter.com/"  target="_blank"> <i class="fa-brands fa-x-twitter my-logo"></i></a>
+       <a href="https://www.facebook.com"  target="_blank"> <i class="fa-brands fa-facebook my-logo2"></i></a>
+    </div>
+          </div>
+    
+    </body>
+    <script>
+      let a=2;
+      let b=5;
+      function image(){
+       //let i=2;
+        if(a==5){
+          a=1
+        }
+          document.querySelector('div.images').innerHTML=`<i class="fa-solid fa-chevron-left left-arrow" onclick="preimage()"></i>
+          <div class="img2"><img src="mehndi-photo-${a}.jpg" alt="mehndi" class="im-2" > </div>
+          <i class="fa-solid fa-chevron-right right-arrow" onclick=" image()"></i>
+`     
+   if(a<=5){ 
+       a=a+1;
+   }
+
+      }
+      function preimage(){
+      // let i=5;
+        if(b==0){
+          b=5;
+        }
+          document.querySelector('div.images').innerHTML=`<i class="fa-solid fa-chevron-left left-arrow" onclick="preimage()"></i>
+          <div class="img2"><img src="mehndi-photo-${b}.jpg" alt="mehndi" class="im-2" > </div>
+          <i class="fa-solid fa-chevron-right right-arrow" onclick=" image()"></i>`;
+       
+       if(b>=1){
+         b=b-1;
+       }
+       
+
+      }
+    
+    </script>
+    </html>
+</body>
+</html>

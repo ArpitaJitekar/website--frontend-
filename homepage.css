@@ -1,0 +1,258 @@
+body{
+    height:100%;
+    width:100%;
+    background-color: aqua;
+    animation:bounce 2s ease-in 0s infinite;
+}
+/*navigation bar*/
+header{  
+      background-color: aquamarine;
+      position: sticky;
+      width:1200px;
+      height:240px;
+      margin-bottom: 20px;
+      
+    margin-top: 0px;
+}
+.navbar{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height:240px;
+    background-color: #C98BB9;
+    /*background-image: url(bg-navbar.jpg);*/
+   width:1250px;
+
+}
+.name{
+     width:120px;
+    height:320px;
+    text-decoration: none;
+    color:inherit;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    border:2px solid goldenrod;
+}
+
+.name:hover{
+    cursor:pointer;
+    font-weight:bolder;
+    
+}
+.navbar a {
+    text-decoration:none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#AB274F;;
+    font-size: 26px;
+   
+  
+
+}
+.navbar a:hover{
+    cursor:pointer;
+  color:white;
+}
+.navbar .but:hover{
+    border:2px solid black;
+    border-radius:7px;
+    background-color:  #846B8A;
+    height:50px;
+}
+
+.name{
+    font-size:6px;
+    height:120px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    text-align:center;
+    color:rgb(69, 7, 7);
+}
+/*psedo images*/
+.images{
+    display:flex;
+    height:100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+    background-image: url(bg-navbar.jpg);
+    background-size:contain;
+   animation:move 1s ease-in-out infinite ;
+}
+/*@keyframes move{
+to{visibility: hidden; }
+
+}*/
+.im-1,.im-2,.im-3,.im-4{
+    height:400px;
+    width:400px;
+    background-color: #FDBCB4;
+    margin-right:14px ;
+    margin-left: 14px;
+}
+.imf{
+    height:500px;
+    border:2px solid #C98BB9;
+    margin-bottom: 40px;
+    border-radius: 5px;
+}
+.images a:hover{
+    width:30px;
+    background-color:;
+    height:400px;
+   display: flex;
+   align-items: center;
+   text-decoration: none;
+}
+.left-arrow,.right-arrow{
+    font-size:50px;
+    color:rgb(237, 123, 199);
+  
+}
+.left-arrow:hover,.right-arrow:hover{
+    font-size:80px;
+    color:rgb(157, 25, 113);
+    cursor:pointer;
+    
+}
+
+@keyframes bounce{
+    from{ background-image:url(bg-2.jpg); }
+    to{
+  background-image:url(bg-1.jpg);
+    }
+}
+#design{
+    border:6px solid palevioletred;
+    border-top:6px solid palevioletred ;
+    height:1200px;
+}
+/*deasign of background of images*/
+.image-designs{
+    display:grid;
+   grid-template-columns: 400px 400px 400px;
+    
+}
+.img-1,.img-2,.img-3,.img-4,.img-5,.img-6{
+    width:350px;
+    height:350px;
+}
+ legend h3{
+    
+    text-shadow: 2px 2px palevioletred;
+    color: palevioletred;
+    font-size:80px;
+}
+/*footer styling*/
+.footer:hover{
+    cursor:pointer;
+    font-size: 26px;
+    height:180px;
+}
+.footer{
+    background-color: #C98BB9;
+    object-fit: cover;
+    width: 1200px;
+    height: 150px;
+    color:#AB274F;
+
+    text-align: center;
+}
+.heart{
+    margin-top: 22px;
+    padding-top: 6px;
+    display:block;
+    font-size:30px;
+
+}
+.heart .hrt{
+    display:inline;
+    color: #660000;
+    font-size:30px;
+    animation: blink 1s steps(5,start) infinite;
+    -webkit-animation: blink 2s steps(5, start) infinite;
+      }
+
+@keyframes blink{
+to{visibility: hidden;}
+
+}
+/*aboout our company and aim*/
+#about-us{
+    
+    height:600px;
+    border:5px solid  #FDBCB4;
+    border-radius:6px;
+}
+#about-us p{
+    font-style: italic;
+    font-size: 60px;
+}
+#about-us .cont{
+    font-size: 32px;
+}
+/*content*/
+.content1{
+    margin-top:160px;
+    width:100%;
+    border:5px solid  #FDBCB4;
+    border-radius: 5px;
+    margin-bottom:80px;
+    height:1000px;
+}
+
+h3.ceo-name{
+    text-align:center;
+    text-shadow:2px 2px rgb(199, 173, 187);
+    color: #FDBCB4;
+    font-weight:bolder;
+    margin-top:30px;
+    font-size:60px;
+
+}
+.ceo-image{
+    width:300px;
+    height:300px;
+    background-color:bisque;
+    text-align:center;
+    display:block;
+  margin-left: auto;
+  margin-right: auto;
+   clip-path: circle(50% at 50% 50%);
+    
+}
+.ceo-info{
+ font-size: 40px;
+ padding-left:20px;
+ padding-right:20px;
+ color:black;
+}
+.im-act{
+    display:flex;
+    align-items:center;
+    
+   
+}
+.trademark{
+    font-size: 16px;
+    
+}
+div button {
+    border:3px solid black;
+    border-radius:6px;
+    margin-top: 140px;
+    background-color: #C98BB9;
+    text-align: center;
+    width:140px;
+    font-weight: bold;
+    text-shadow: 1px 1px#AB274F;
+    glyph-orientation-horizontal: center;
+    margin-left: 600px;
+    height:40px
+}
+.but-booking{
+    
+}
+div button:hover{
+    cursor:pointer;
+    width:160px;
+    height:60px;
+}
+

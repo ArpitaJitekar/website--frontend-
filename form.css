@@ -1,0 +1,43 @@
+body{
+    padding:18px;
+    color:pink;
+}
+form{
+    border:3px solid black;
+    border-radius: 6px;
+    padding:16px;
+    height:100%;
+    width:1000px;
+    margin-left:50px;
+    margin-top:40px;
+}
+form h1{
+ color:hotpink;
+ text-align: center;   
+ margin-bottom: 46px;
+    
+}
+input:hover fieldset:hover{
+cursor:pointer;
+}
+fieldset input{
+    width:100%;
+}
+a{text-decoration: none;
+}
+a input{
+    color:crimson;
+    
+    display:inline;
+    background-color: rgb(224, 139, 190);
+    
+
+}
+.tag{
+    text-align: center;
+    color: pink;
+    text-shadow: 2px 2px purple;
+}
+div {
+    display:inline;
+}
